@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores'
 	import Arrow from '$lib/components/Arrow.svelte'
+  import HeaderItem from './HeaderItem.svelte';
 </script>
 
 <header class="fixed inset-x-0 top-0 z-10 text-sm text-white bg-black border-b border-gray-500 xl:text-base">
@@ -11,21 +12,21 @@
 			</a>
       {#if $page.route.id.includes('/games')}
         <Arrow />
-        <a href="/games" class="flex items-center h-full xl:px-2 px-1.5 underline decoration-dotted underline-offset-4 shrink-0 whitespace-nowrap">
+        <HeaderItem href="/games">
           Games
-        </a>
+        </HeaderItem>
       {/if}
 			{#if $page.params.game}
 				<Arrow />
-				<a href={`/games/${$page.params.game}/files`} class="flex items-center h-full xl:px-2 px-1.5 underline decoration-dotted underline-offset-4 shrink-0 whitespace-nowrap">
+				<HeaderItem href={`/games/${$page.params.game}/files`}>
 					{$page.params.game.toUpperCase()}
-				</a>
+				</HeaderItem>
 			{/if}
 			{#if $page.params.file}
 				<Arrow />
-				<a href={`/games/${$page.params.game}/files/${$page.params.file}`} class="flex items-center h-full xl:px-2 px-1.5 underline decoration-dotted underline-offset-4 shrink-0 whitespace-nowrap">
+				<HeaderItem href={`/games/${$page.params.game}/files/${$page.params.file}`}>
 					{$page.params.file.replaceAll('-s-', '\'s').replaceAll('\'s', '\'s ').replaceAll('-', ' ').toUpperCase()}
-				</a>
+				</HeaderItem>
 			{/if}
 		</ul>
 		<a class="absolute items-center hidden border border-white rounded xl:gap-2 xl:p-2 sm:flex xl:right-2 xl:inset-y-2 gap-1.5 right-1.5 p-1.5 inset-y-1.5" href="https://github.com/Sina-Hosseini-GST/resident-evil-fa/tree/sv5" target="_blank">
