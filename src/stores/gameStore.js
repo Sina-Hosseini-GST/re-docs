@@ -5849,7 +5849,7 @@ const gameStore = writable([
             paragraphDirection: "right"
           },
           {
-            paragraph: "اما بهت بگم که مسیر کلیسا، هیچ‌جوره مثل آب خوردن نیست. اونا موجودی به نام «ال گیگانته» رو فرستادن و این یعنی خدا به همرات.",
+            paragraph: "اما بهت بگم که مسیر کلیسا، هیچ‌جوره مثل آب خوردن نیست. اونا موجودی به نام «ال گیگانته» رو فرستادن و این یعنی اوضاع خیطه.",
             paragraphDirection: "right"
           },
           {
@@ -6624,7 +6624,7 @@ const gameStore = writable([
         ],
         farsiContent: [
           {
-            paragraph: "گویا یک مهمان ناخوانده‌ی مونث در میان‌مان است. معتقدیم که او با سرا در ارتباط است.",
+            paragraph: "گویا یک مهمان ناخوانده‌ی مونث در میان‌مان است و ایمان داریم که با سرا در ارتباط است.",
             paragraphDirection: "right"
           },
           {
@@ -6727,7 +6727,7 @@ const gameStore = writable([
             paragraphDirection: "right"
           },
           {
-            paragraph: "با وجود این، کاری برای بهبود اوضاع انجام دهم.",
+            paragraph: "با وجود این، نمی‌توانم کاری برای بهبود اوضاع انجام دهم.",
             paragraphDirection: "right"
           },
           {

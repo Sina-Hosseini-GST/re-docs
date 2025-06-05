@@ -40,7 +40,7 @@
       of my favorite video games into Persian.
     </p>
     <img class="w-2/5 mx-auto" src={logo} alt="Logo" />
-    <a class="flex items-center self-center justify-center w-4/5 gap-1.5 px-2 py-1 font-bold text-center border-gray-800 xl:py-2 border-y xl:gap-2 xl:px-4 bg-gradient-to-r from-zinc-900 via-sky-950 to-zinc-900" href="/games">
+    <a class="flex items-center self-center justify-center w-4/5 gap-1.5 px-2 py-1 font-bold text-center border-gray-800 xl:py-2 border-y xl:gap-2 xl:px-4 bg-gradient-to-r from-zinc-900 via-green-900 hover:via-sky-900 to-zinc-900" href="/games">
       <span>
         EXPLORE
       </span>
@@ -280,6 +280,24 @@
           action="Translated"
           game="RE4"
           date="Jun 5, 2025"
+        />
+        <Log
+          text="Butler's Memo"
+          action="Proofread"
+          game="RE4"
+          date="Jun 6, 2025"
+        />
+        <Log
+          text="Anonymous Letter"
+          action="Proofread"
+          game="RE4"
+          date="Jun 6, 2025"
+        />
+        <Log
+          text="Female Intruder"
+          action="Proofread"
+          game="RE4"
+          date="Jun 6, 2025"
         />
         <li>
           Number of Documents Translated: {numberOfFilesTranslated}
