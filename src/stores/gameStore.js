@@ -6649,6 +6649,93 @@ const gameStore = writable([
           }
         ]
       },
+      {
+        id: 15,
+        fileImageUrl: '/src/lib/assets/images/re4/files/butler-s-memo/butler-s-memo.png',
+        fileImageSource: 'Evil Resource',
+        fileImageSourceUrl: "https://www.evilresource.com/resident-evil-4/files/butlers-memo",
+        location: [
+          {
+            text: "Location",
+            locationImageUrl: '/src/lib/assets/images/re4/files/butler-s-memo/location/butler-s-memo-location.png',
+            mapImageUrl: {
+              far: '/src/lib/assets/images/re4/files/butler-s-memo/map/butler-s-memo-map-far.png',
+              default: '/src/lib/assets/images/re4/files/butler-s-memo/map/butler-s-memo-map-default.png',
+              near: '/src/lib/assets/images/re4/files/butler-s-memo/map/butler-s-memo-map-near.png'
+            }
+          }
+        ],
+        url: "/butler-s-memo",
+        title: "Butler's Memo",
+        originalContent: [
+          {
+            paragraph: "Knowing that Sr. Ramon Salazar had no family, Lord Saddler must have used his strong faith in the Los Illuminados to his advantage to talk Sr. Salazar into undoing the seal of the Las Plagas once done by his ancestor.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "Sr. Salazar would never do such a thing unless he was in some way being used unknowingly. I should have sensed the Lord's dirty scheme sooner. I feel I'm partly responsible for all of this.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "I have no idea as to what the Lord is planning, but Sr. Salazar was just being used.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "It is too late now however, Sr. Salazar has already taken the Plaga into his body.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "There is no turning back once the Plaga has turned into an adult in the body.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "The Plaga parasite will not die unless the host dies. There's no cure. Perhaps, Sr. Salazar may have been vaguely aware of the Lord's plan all along. But it's hard to tell.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "Nevertheless, there's nothing I can do about it now.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "I have served the Salazar family for generations. I am prepared to continue my services until the very end.",
+            paragraphDirection: "left"
+          }
+        ],
+        farsiContent: [
+          {
+            paragraph: "از آنجا که جناب رامون سالازار خانواده‌ای نداشت، لرد سدلر می‌بایست از اطمینان خود به «لوس ایلامینادوس» به نفع خود استفاده می‌کرد تا سالازار را برای آزادسازی «لاس پلاگاس» متقاعد سازد.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "جناب سالازار نیز چنین کاری را هرگز انجام نداد، مادامی که خود ناخواسته تحت کنترل قرار گرفت. من نیز باید زودتر از برنامه‌ی شوم لرد باخبر می‌شدم، و حس می‌کنم کم‌وبیش خود مسئول این اتفاقاتم.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "هیچ ایده‌ای از برنامه‌های لرد ندارم، اما می‌دانم که جناب سالازار تحت کنترل قرار گرفته.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "هرچند که کار از کار گذشته، و «پلاگا» نیز وارد بدن جناب سالازار شده.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "وقتی هم که «پلاگا» به تکامل در بدن شخص میزبان برسد، هیچ راه برگشتی در کار نخواهد بود.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "همچنین تا زمانی که شخص میزبان زنده باشد، انگل «پلاگا» از بین نمی‌رود و هیچ درمانی در کار نیست. شاید از همان شروع کار جناب سالازار تا حدی از نقشه‌ی لرد باخبر بود، هرچند که گفتن آن سخت است.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "با وجود این، کاری برای بهبود اوضاع انجام دهم.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "من برای نسل‌ها در خدمت خانواده‌ی سالازار بودم و برای انجام این کار تا پایان راه آماده خواهم بود.",
+            paragraphDirection: "right"
+          },
+        ]
+      },
     ]
   }
 ]);

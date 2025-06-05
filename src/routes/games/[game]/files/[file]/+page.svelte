@@ -37,7 +37,7 @@
             <Credit imageSourceUrl={file.fileImageSourceUrl} imageSource={file.fileImageSource} />
           </ImageContent>
           <ContentName type='special'>
-            File Image
+            Document Image
           </ContentName>
         </Content>
         {#if file.location}

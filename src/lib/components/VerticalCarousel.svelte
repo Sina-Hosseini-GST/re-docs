@@ -6,7 +6,7 @@
   import emblaCarouselSvelte from 'embla-carousel-svelte'
   import ContentName from '$lib/components/ContentName.svelte'
   
-  let options = { loop: true, axis: 'y' }
+  let options = { loop: true, axis: 'y', dragFree: true }
   let value = $state('')
   let slides = []
   let searchedSlides = []
@@ -25,10 +25,10 @@
       for (let i = 0; i < elements.length && elements[i]; i++) {
         const element = elements[i]
         element.lastChild.classList.remove('bg-opacity-0')
-        element.lastChild.classList.add('bg-opacity-75')
+        element.lastChild.classList.add('bg-opacity-60')
       }
       const selectedElement = elements[index]
-      selectedElement.lastChild.classList.remove('bg-opacity-75')
+      selectedElement.lastChild.classList.remove('bg-opacity-60')
       selectedElement.lastChild.classList.add('bg-opacity-0')
     }
     else {
@@ -36,10 +36,10 @@
       for (let i = 0; i < elements.length && elements[i]; i++) {
         const element = elements[i]
         element.lastChild.classList.remove('bg-opacity-0')
-        element.lastChild.classList.add('bg-opacity-75')
+        element.lastChild.classList.add('bg-opacity-60')
       }
       const selectedElement = elements[index]
-      selectedElement.lastChild.classList.remove('bg-opacity-75')
+      selectedElement.lastChild.classList.remove('bg-opacity-60')
       selectedElement.lastChild.classList.add('bg-opacity-0')
     }
     emblaApi.scrollTo(index)
@@ -83,7 +83,7 @@
                 ({item.releaseDate})
               </div>
             {/if}
-            <div class="absolute inset-0 transition-colors bg-black {item.id === (type === 'game' ? gameSlideId : fileSlideId) ? 'bg-opacity-0' : 'bg-opacity-75'} group-hover:bg-opacity-0"></div>
+            <div class="absolute inset-0 transition-colors bg-black {item.id === (type === 'game' ? gameSlideId : fileSlideId) ? 'bg-opacity-0' : 'bg-opacity-60'} group-hover:bg-opacity-0"></div>
           </a>
         {/each}
         {:else}
@@ -98,13 +98,13 @@
                   ({item.releaseDate})
                 </div>
               {/if}
-              <div class="absolute inset-0 transition-colors bg-black {item.id === (type === 'game' ? gameSlideId : fileSlideId) ? 'bg-opacity-0' : 'bg-opacity-75'} group-hover:bg-opacity-0"></div>
+              <div class="absolute inset-0 transition-colors bg-black {item.id === (type === 'game' ? gameSlideId : fileSlideId) ? 'bg-opacity-0' : 'bg-opacity-60'} group-hover:bg-opacity-0"></div>
             </a>
           {/each}
       {/if}
     </div>
   </div>
   <ContentName>
-    {type === 'game' ? 'Games' : 'Files'}
+    {type === 'game' ? 'Games' : 'Documents'}
   </ContentName>
 </div>
