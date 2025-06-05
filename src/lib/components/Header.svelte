@@ -29,7 +29,7 @@
 				</HeaderItem>
 			{/if}
 		</ul>
-		<a class="absolute items-center hidden border border-white rounded xl:gap-2 xl:p-2 sm:flex xl:right-2 xl:inset-y-2 gap-1.5 right-1.5 p-1.5 inset-y-1.5" href="https://github.com/Sina-Hosseini-GST/resident-evil-fa/tree/sv5" target="_blank">
+		<a class="absolute items-center hidden border border-white rounded xl:gap-2 xl:p-2 sm:flex xl:right-2 xl:inset-y-2 gap-1.5 right-1.5 p-1.5 inset-y-1.5" href="https://github.com/Sina-Hosseini-GST/re-docs" target="_blank">
 			<span class="whitespace-nowrap">
 				Rate This Repo on GitHub
 			</span>
