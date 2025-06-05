@@ -38,18 +38,15 @@
         target="_blank">Sina</a
       >, and this is my independent project that provides document translations
       of my favorite video games into Persian.
-      <a class="underline decoration-dotted underline-offset-2" href="/games"
-        >Go ahead and select your desired title to explore the stories</a
-      >!
     </p>
-		<a class="w-2/5 mx-auto" href="/games">
-			<img class="w-full" src={logo} alt="Logo" />
-		</a>
-    <p class="italic text-center text-yellow-400">
-      This website is constantly being updated, which means that every time you
-      visit REdocs, you're likely to see more content! So, stay tuned!
-    </p>
-    <details class="py-1.5 border-gray-700 xl:py-2 xl:border-y-2 border-y">
+    <img class="w-2/5 mx-auto" src={logo} alt="Logo" />
+    <a class="flex items-center self-center justify-center w-4/5 gap-1.5 px-2 py-1 font-bold text-center border-gray-800 xl:py-2 border-y xl:gap-2 xl:px-4 bg-gradient-to-r from-zinc-900 via-sky-950 to-zinc-900" href="/games">
+      <span>
+        EXPLORE
+      </span>
+      <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" color="" viewBox="4 3.99 13 12.01"><path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </a>
+    <details class="py-1.5 border-gray-800 xl:py-2 xl:border-y-2 border-y">
       <summary
         class="sticky font-bold text-center text-blue-600 cursor-pointer xl:top-[calc(3.5rem+1px)] top-[calc(3rem+1px)] bg-zinc-900"
       >
@@ -278,8 +275,14 @@
           game="RE4"
           date="Jun 5, 2025"
         />
+        <Log
+          text="Sample Retrieved"
+          action="Translated"
+          game="RE4"
+          date="Jun 5, 2025"
+        />
         <li>
-          Number of Files Translated: {numberOfFilesTranslated}
+          Number of Documents Translated: {numberOfFilesTranslated}
         </li>
         <li>
           Number of Words Translated: {numberOfWordsTranslated.toLocaleString()}

@@ -10,7 +10,10 @@
       Select a game
     </div>
     <div>
-      to display its documents!
+      and read
+    </div>
+    <div>
+      its documents!
     </div>
   </div>
 </div>

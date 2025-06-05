@@ -12,7 +12,9 @@
   let searchedSlides = []
   let emblaApi = $state()
   let gameSlideId = $state(- 1)
+  let gameSlideIndex = $state(- 1)
   let fileSlideId = $state(- 1)
+  let fileSlideIndex = $state(- 1)
   let ableToLoop = $state(true)
   function onInit(event) {
     emblaApi = event.detail
@@ -55,13 +57,23 @@
     if (!$page.params.file) {
       fileSlideId = - 1
     }
+    
 		if (value) {
 			searchedItems = items.filter(item => item.title.toLowerCase().includes(value.toLowerCase()))
 		}
+    
     if (type === 'game') {
+      gameSlideIndex = items.findIndex(item => item.url === `/games/${$page.params.game}/files`)
+      if (emblaApi) {
+        emblaApi.scrollTo(gameSlideIndex)
+      }
       gameSlideId = items.find(item => item.url === `/games/${$page.params.game}/files`)?.id
     }
     else {
+      fileSlideIndex = items.findIndex(item => `/games/${$page.params.game}/files${item.url}` === $page.url.pathname)
+      if (emblaApi) {
+        emblaApi.scrollTo(fileSlideIndex)
+      }
       fileSlideId = items.find(item => `/games/${$page.params.game}/files${item.url}` === $page.url.pathname)?.id
     }
 	})

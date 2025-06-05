@@ -6736,6 +6736,61 @@ const gameStore = writable([
           },
         ]
       },
+      {
+        id: 16,
+        fileImageUrl: '/src/lib/assets/images/re4/files/sample-retrieved/sample-retrieved.png',
+        fileImageSource: 'Evil Resource',
+        fileImageSourceUrl: "https://www.evilresource.com/resident-evil-4/files/sample-retrieved",
+        location: [
+          {
+            text: "Location",
+            locationImageUrl: '/src/lib/assets/images/re4/files/sample-retrieved/location/sample-retrieved-location.png',
+            mapImageUrl: {
+              far: '/src/lib/assets/images/re4/files/sample-retrieved/map/sample-retrieved-map-far.png',
+              default: '/src/lib/assets/images/re4/files/sample-retrieved/map/sample-retrieved-map-default.png',
+              near: '/src/lib/assets/images/re4/files/sample-retrieved/map/sample-retrieved-map-near.png'
+            }
+          }
+        ],
+        url: "/sample-retrieved",
+        title: "Sample Retrieved",
+        originalContent: [
+          {
+            paragraph: "As you may have heard, Luis Sera has been disposed of by Lord Saddler. The \"sample\" is back where it belongs. I had hoped that the whole matter could be resolved without troubling the Lord. However, as long as the \"sample\" is safe we can all rejoice, for our time is nearly at hand.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "Now that the \"sample\" is back in our safe hands, it'll be a bit more difficult for that troublesome woman to get it. In light of all this, it's unfortunate that Sera had to go. Like us, he would have had a bright future if only he had shown more faith in our beliefs.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "As for the other two Americans, the Lord has left the matter in our hands.",
+            paragraphDirection: "left"
+          },
+          {
+            paragraph: "We must not disappoint the Lord. We shall capture Ashley and take her to the Lord and dispose of the American agent.",
+            paragraphDirection: "left"
+          },
+        ],
+        farsiContent: [
+          {
+            paragraph: "همانطور که احتمالا به گوش‌تان خورده، لوییس سرا توسط لرد سدلر به قتل رسید و «نمونه‌ی آزمایشگاهی» اکنون سر جایش قرار دارد. امید داشتم تا این موضوع بدون آنکه لرد را به دردسر بیاندازد، حل شود. هرچند، تا زمانی که این «نمونه» در محیطی امن قرار داشته باشد، ما شادکام خواهیم بود. چرا که به زودی، دنیا تحت کنترل ما قرار خواهد گرفت.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "حال که این «نمونه» در دستان ماست، دستیابیِ به آن برای زنِ دردسرساز، کمی سخت‌تر خواهد بود. در همین راستا نیز، این مایه‌ی تاسف است که سرا باید کشته می‌شد. تنها کافی بود تا او، همانند ما، اعتقاد خود را نسبت به تفکرات‌مان کمی بیشتر بروز می‌داد تا از آینده‌ای روشن برخوردار می‌شد.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "لرد نیز تمام‌کردن ماجرای این دو آمریکایی را به ما سپرده.",
+            paragraphDirection: "right"
+          },
+          {
+            paragraph: "و ما نباید لرد را نااُمید کنیم. ما می‌بایست اشلی را دستگیر و تحویل لرد بدهیم و همچنین از شر آن مامور آمریکایی خلاص شویم.",
+            paragraphDirection: "right"
+          }
+        ]
+      },
     ]
   }
 ]);
